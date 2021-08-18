@@ -1,0 +1,19 @@
+<!--  Emmet looks at the parent tag name every time you’re expanding the abbreviation with an implicit name. 
+Here’s how it resolves the names for some parent elements:
+ * li for ul and ol
+ * tr for table, tbody, thead and tfoot
+ * td for tr
+ * option for select and optgroup
+ -->
+
+ <!-- Equivalent to div.wrap>div.content -->
+ .wrap>.content
+
+<!-- Equivalent to em>span.info -->
+em>.info
+
+<!-- Equivalent to ul>li.item*3 -->
+ul>.item*3
+
+<!-- Equivalent to table>tr#row$*4>td[colspan=2] -->
+table>#row$*4>[colspan=2]
