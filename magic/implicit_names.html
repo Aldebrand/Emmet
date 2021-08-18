@@ -7,13 +7,32 @@ Here’s how it resolves the names for some parent elements:
  -->
 
  <!-- Equivalent to div.wrap>div.content -->
- .wrap>.content
+ <div class="wrap">
+     <div class="content"></div>
+ </div>
 
 <!-- Equivalent to em>span.info -->
-em>.info
+<em><span class="info"></span></em>
 
 <!-- Equivalent to ul>li.item*3 -->
-ul>.item*3
+<ul>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+</ul>
 
 <!-- Equivalent to table>tr#row$*4>td[colspan=2] -->
-table>#row$*4>[colspan=2]
+<table>
+    <tr id="row1">
+        <td colspan="2"></td>
+    </tr>
+    <tr id="row2">
+        <td colspan="2"></td>
+    </tr>
+    <tr id="row3">
+        <td colspan="2"></td>
+    </tr>
+    <tr id="row4">
+        <td colspan="2"></td>
+    </tr>
+</table>
